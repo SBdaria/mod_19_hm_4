@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Shop{% endblock %}</title>
+</head>
+<body>
+    <header>
+        {% block pagename %}
+        <h1>Pagename</h1>
+        {% endblock %}
+    </header>
+
+    <menu>
+        {% block menu %}
+        <a href="/">Главная</a><br>
+        <a href="/games">Игры</a><br>
+        <a href="/box">Корзина</a>
+        {% endblock %}
+    </menu>
+
+    <content>
+        {% block content %}
+        content
+        {% endblock %}
+    </content>
+
+    <exit>
+        {% block exit %}
+        <button><a href="/">Вернуться на главную страницу</a></button>
+        {% endblock %}
+    </exit>
+
+</body>
+</html>
